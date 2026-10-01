@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ma sélection de produits</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#F6F8FB;--ink:#14213D;--soft:#55607A;--card:#fff;--line:#DDE3EE;--accent:#0B8F8F;--hot:#FFB547;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1626;--ink:#EEF2FA;--soft:#9BA6BF;--card:#18223A;--line:#2B3856;--accent:#3CC7C7}}
+:root[data-theme="dark"]{--bg:#0F1626;--ink:#EEF2FA;--soft:#9BA6BF;--card:#18223A;--line:#2B3856;--accent:#3CC7C7}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 40px}
+header{padding:44px 0 28px}
+h1{font-size:clamp(2rem,9vw,3.2rem);line-height:1.05;font-weight:800;margin:0 0 14px;letter-spacing:-.02em}
+header p{color:var(--soft);margin:0;max-width:34em}
+.grid{display:grid;gap:16px}
+@media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pic{height:120px;display:grid;place-items:center;font-size:2.6rem;background:linear-gradient(135deg,var(--accent),var(--hot));color:#fff}
+.body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cat{font-size:.85rem;color:var(--accent);font-weight:600}
+h2{font-size:1.15rem;margin:0}
+.body p{margin:0;color:var(--soft);font-size:.95rem;flex:1}
+.btn{display:block;text-align:center;background:var(--ink);color:var(--bg);padding:12px;border-radius:10px;font-weight:600;text-decoration:none;margin-top:6px}
+.btn:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+footer{margin-top:32px;font-size:.85rem;color:var(--soft);border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Les produits que je recommande</h1>
+<p>Une sélection simple de produits populaires. Je compare, tu choisis, et tu achètes directement sur le site du vendeur.</p>
+</header>
+<main class="grid">
+<!-- Remplace chaque href="#" par ton lien d'affiliation -->
+<article class="card"><div class="pic" aria-hidden="true">🎧</div><div class="body"><span class="cat">Audio</span><h2>Écouteurs sans fil</h2><p>Pratiques pour le sport, les trajets et les appels, avec un étui de recharge.</p><a class="btn" href="#">Voir l'offre</a></div></article>
+<article class="card"><div class="pic" aria-hidden="true">⌚</div><div class="body"><span class="cat">Connecté</span><h2>Montre connectée</h2><p>Suivi des pas, du sommeil et des notifications au poignet.</p><a class="btn" href="#">Voir l'offre</a></div></article>
+<article class="card"><div class="pic" aria-hidden="true">🔊</div><div class="body"><span class="cat">Audio</span><h2>Enceinte Bluetooth</h2><p>Un son puissant, résistante aux éclaboussures, facile à emporter.</p><a class="btn" href="#">Voir l'offre</a></div></article>
+<article class="card"><div class="pic" aria-hidden="true">🔋</div><div class="body"><span class="cat">Accessoires</span><h2>Batterie externe</h2><p>Recharge ton téléphone plusieurs fois quand tu es loin d'une prise.</p><a class="btn" href="#">Voir l'offre</a></div></article>
+<article class="card"><div class="pic" aria-hidden="true">💡</div><div class="body"><span class="cat">Maison</span><h2>Lampe de bureau LED</h2><p>Lumière réglable pour travailler ou lire sans fatiguer les yeux.</p><a class="btn" href="#">Voir l'offre</a></div></article>
+<article class="card"><div class="pic" aria-hidden="true">📱</div><div class="body"><span class="cat">Accessoires</span><h2>Support de téléphone</h2><p>Pour filmer, suivre une recette ou regarder une vidéo les mains libres.</p><a class="btn" href="#">Voir l'offre</a></div></article>
+</main>
+<footer>Transparence : cette page contient des liens d'affiliation. Si tu achètes via un lien, je peux toucher une commission, sans frais supplémentaires pour toi.</footer>
+</div>
+</body>
+</html>
